@@ -1,0 +1,14 @@
+---
+layout: chinese_medicine
+title: 什么是中医 
+permalink: /chinese_medicine/what_is_chinese_medicine/
+author: all
+---
+
+{% for post in site.posts %}
+{% if post.en_categories and post.en_categories.chinese_medicine and post.en_categories.chinese_medicine.what_is_chinese_medicine %}
+	{% include chinese_medicine_item.html %}
+{% endif %}
+{% endfor %}
+
+

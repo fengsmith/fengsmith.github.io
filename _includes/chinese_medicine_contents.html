@@ -1,0 +1,20 @@
+<div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <ul>
+      <li class="{% if page.title == '中医' %}current{% endif %}">
+        <a href="/chinese_medicine/">中医</a>
+      </li>
+    </ul>
+	<h4>什么是中医</h4>
+    
+    <ul>
+      {% for post in site.posts %}
+        {% if post.en_categories and post.en_categories.chinese_medicine %}
+	      <li class="{% if page.title == post.title %}current{% endif %}">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+	    {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+</div>
