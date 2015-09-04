@@ -1,0 +1,27 @@
+---
+layout: life
+---
+
+<article>
+  <h2>
+    {{ page.title }}
+    <a href="{{ page.url }}" class="permalink" title="Permalink">∞</a>
+  </h2>
+  <span class="post-category">
+    <span class="label">
+      {{ page.categories | array_to_sentence_string }}
+    </span>
+  </span>
+  <div class="post-meta">
+    <a href="" class="post-author">
+      <img src="" class="avatar" alt="{{ post.author }}" width="24" height="24">
+      {{ post.author }}
+    </a>
+	<span class="post-date">
+      {{ post.date | date: "%Y年-%m月-%d日" }}
+    </span>
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
