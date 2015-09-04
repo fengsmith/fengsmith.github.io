@@ -2,17 +2,17 @@
   <li class="{% if page.overview %}current{% endif %}">
     <a href="/">主页</a>
   </li>
-  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
-    <a href="/docs/home/">技术</a>
+  <li class="{% if page.url contains '/technology/' %}current{% endif %}">
+    <a href="/technology/">技术</a>
   </li>
-  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
-    <a href="/docs/home/">生活</a>
+  <li class="{% if page.url contains '/life/' %}current{% endif %}">
+    <a href="/life/">生活</a>
   </li>
   <li class="{% if page.en_categories and page.en_categories.chinese_medicine %}current{% endif %}">
     <a href="/chinese_medicine/">中医</a>
   </li>
-   <li class="{% if page.en_categories and page.en_categories.chinese_medicine %}current{% endif %}">
-    <a href="/chinese_medicine/">关于我</a>
+   <li class="{% if page.title == '关于我' %}current{% endif %}">
+    <a href="/about_me/">关于我</a>
   </li>
   
 </ul>

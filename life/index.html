@@ -1,0 +1,12 @@
+---
+layout: life
+title: 生活
+permalink: /life/
+en_categories:
+    life: true
+
+---
+
+{% for post in site.posts.categories.life %}
+  {% include life_item.html %}
+{% endfor %}

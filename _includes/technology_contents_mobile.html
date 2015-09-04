@@ -1,9 +1,9 @@
 <div class="docs-nav-mobile unit whole show-on-mobiles">
   <select onchange="if (this.value) window.location.href=this.value">
     <option value="">目录…</option>
-    <option value="/chinese_medicine/">中医</option>
+    <option value="/technology/">技术</option>
     <optgroup>
-      {% for post in site.posts %}
+      {% for post in site.categories.technology %}
       <option value="{{ post.url }}">{{ post.title }}</option>
       {% endfor %}
     </optgroup>

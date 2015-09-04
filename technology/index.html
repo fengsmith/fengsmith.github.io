@@ -1,0 +1,12 @@
+---
+layout: technology
+title: 技术
+permalink: /technology/
+en_categories:
+    life: true
+
+---
+
+{% for post in site.posts.categories.technology %}
+  {% include technology_item.html %}
+{% endfor %}
